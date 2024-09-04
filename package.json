@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "@types/websocket": "^1.0.10",
+    "lucide-react": "^0.438.0",
     "typescript": "^5.5.4",
     "websocket": "^1.0.35",
     "zod": "^3.23.8"

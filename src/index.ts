@@ -13,6 +13,7 @@ const server = http.createServer(function(request:any, response:any) {
 
 const userManager=new UserManager();
 const store =new InMemoryStore();
+
 server.listen(8080, function() {
     console.log((new Date()) + ' Server is listening on port 8080');
 });
@@ -48,9 +49,7 @@ wsServer.on('request', function(request) {
         }
       
     });
-    connection.on('close', function(reasonCode, description) {
-        console.log((new Date()) + ' Peer ' + connection.remoteAddress + ' disconnected.');
-    });
+    
 });
 
 
